@@ -25,10 +25,11 @@ document.addEventListener("submit",async event=>{
             }
             defaultText.textContent =``
             wetherData = await response.json()
-            const {resolvedAddress:name,currentConditions:{conditions,humidity,icon,temp,feelslike,description}} = wetherData
+            const {resolvedAddress:name,currentConditions:{conditions,humidity,icon,temp,feelslike}} = wetherData
             place.textContent = name
             myIcon.textContent = getWeatherEmoji(icon)
             let fl = parseFloat(feelslike)
+            let temprature = parseFloat(temp)
             temprature = ((temprature - 32) * 5 / 9).toFixed()
             fl = ((fl - 32) * 5 / 9).toFixed()
             myTemprature.textContent = `Temprature: ${temprature}℃`
