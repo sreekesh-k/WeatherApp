@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    font-family: system-ui,'Open Sans';
+    background-color: hsla(252, 10%, 10%, 0.78);
+    color: white;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg,rgb(64, 90, 108) , rgb(92, 74, 41));
+}
+
+.container{
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.415);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    backdrop-filter: blur(10px);
+    
+}
+.myform input{
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.415);
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+}
+.myform button{
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color:rgb(77, 166, 62);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+}
+.myform button:hover{
+    background-color: rgb(53, 113, 42);
+}
+.bordernone{
+    border: none;
+    
+}
